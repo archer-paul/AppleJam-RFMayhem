@@ -1,0 +1,50 @@
+APPLEJAM
+
+ARTS DU BROUILLAGE 
+**Brouilleur Constant**:
+   - **Description**: Ce type de brouilleur émet continuellement un signal, perturbant ainsi tout le trafic légitime en empêchant les nœuds de sentir le canal comme étant libre.
+   - **Mise en œuvre**: Utiliser un générateur de signal ou un dispositif sans fil configuré pour émettre des bits aléatoires en continu sans respecter les protocoles de la couche MAC.
+
+2. **Brouilleur Trompeur**:
+   - **Description**: Ce brouilleur envoie de manière continue des paquets réguliers, forçant les autres nœuds à rester en mode réception.
+   - **Mise en œuvre**: Configurer le dispositif pour envoyer un flux constant de paquets ou de préambules de paquets pour maintenir les autres nœuds en état de réception.
+
+3. **Brouilleur Aléatoire**:
+   - **Description**: Alterne entre les périodes de brouillage et de sommeil, ce qui peut conserver l'énergie tout en perturbant périodiquement le réseau.
+   - **Mise en œuvre**: Programmer le dispositif pour qu'il passe alternativement d'un état actif à un état de repos, avec des périodes déterminées ou aléatoires pour chaque état.
+
+4. **Brouilleur Réactif**:
+   - **Description**: Ce brouilleur reste inactif jusqu'à ce qu'il détecte une activité sur le canal, puis commence à émettre pour perturber spécifiquement la communication en cours.
+   - **Mise en œuvre**: Utiliser des capteurs pour détecter l'activité du canal et activer le brouillage en réponse à cette activité.
+
+Brouillage dans un réseau de capteurs sans fil au niveau des fréquences de brouillage
+1. **Brouillage de spot** : Concentre toute la puissance de transmission sur une seule fréquence utilisée par la cible.
+2. **Brouillage de balayage** : Le brouilleur change rapidement de fréquence, balayant une gamme de fréquences pour perturber la communication.
+3. **Brouillage de barrage** : Brouille une large bande de fréquences simultanément. Cela affecte plusieurs fréquences à la fois mais avec une puissance réduite pour chaque fréquence.
+4. **Brouillage déceptif** : Utilise des signaux qui imitent les communications normales pour inonder le réseau de données inutiles, rendant la détection du brouillage difficile.
+
+•	Pratique des Attaques DoS
+
+Les attaques de déni de service dans les réseaux de capteurs visent à compromettre la disponibilité du réseau en saturant les ressources avec des requêtes superflues ou malveillantes, empêchant ainsi le réseau de remplir ses fonctions normales.
+
+1. **Jamming (Brouillage)** : Cette technique consiste à interférer avec les fréquences radio utilisées par le réseau pour empêcher la communication entre les nœuds. Le brouillage peut être constant ou intermittent et peut être combattu par des techniques comme l'étalement de spectre.
+
+2. **Exhaustion (Épuisement)** : L'attaquant vise à épuiser les batteries des capteurs en les forçant à exécuter des tâches inutiles ou en induisant des collisions de paquets qui nécessitent des retransmissions fréquentes.
+
+3. **Collision** : Cette technique implique l'envoi de signaux au moment où un nœud tente de transmettre des données, provoquant ainsi une collision de paquets et des erreurs dans la transmission des données.
+
+4. **Flooding (Inondation)** : L'attaque par inondation consiste à envoyer un grand nombre de requêtes à un ou plusieurs nœuds, dépassant leur capacité de traitement et rendant le réseau incapable de traiter des requêtes légitimes.
+
+ETAPES /
+-	Identifier les fréquences
+-	Créer un trafic artificiel
+-	Exploiter les vulnérabilité
+CONTREMESURES
+* Contre-mesures pratiques
+1. **Puissance de transmission régulée** : Augmenter la puissance de transmission pour surpasser les signaux de brouillage.
+2. **Étalement de spectre en saut de fréquence (FHSS)** : Change rapidement et de manière aléatoire de fréquence de transmission pour éviter l'interférence.
+3. **Étalement de spectre à séquence directe (DSSS)** : Utilise un signal pseudo-aléatoire qui élargit la bande de fréquence, rendant les signaux difficiles à intercepter ou à brouiller.
+4. **Technologie Ultra Wide Band (UWB)** : Utilise de très courtes impulsions sur une large bande de fréquences, rendant les signaux difficiles à détecter et à brouiller.
+5. **Polarisation de l'antenne** : Modifier la polarisation de l'antenne peut réduire l'impact du brouillage en empêchant les signaux non désirés d'être reçus correctement.
+6. **Transmission directionnelle** : Utilise des antennes directionnelles qui émettent des ondes radio dans une direction spécifique, réduisant la possibilité de brouillage
+7. le mapping : les nœuds brouillés envoient un message à leurs voisins pour signifier qu’ils sont brouillés > comprendre aux autres que leurs voisins sont inactifs > cartographier et dévier le traffic. 
