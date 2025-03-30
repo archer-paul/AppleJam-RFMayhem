@@ -44,7 +44,7 @@ AppleJam is a project that explores signal jamming and decoding using PlutoSDR (
 - **Amine Medjahed**: PlutoSDR configuration, scripting, and debugging.
 - **Maëliss De Baumont**: Research on jamming techniques and documentation.
 - **Alexander Hare**: Spectrogram analysis, modulation identification, and jamming implementation.
-- **Thomas**: Signal modeling, simulation, and algorithm optimization.
+- **Thomas Soubise**: Signal modeling, simulation, and algorithm optimization.
 
 ## Resources
 - [PlutoSDR GitHub](https://github.com/jorgejc2/PlutoSDR/tree/master) - Spectrogram tool
